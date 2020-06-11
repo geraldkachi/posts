@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>KachMan Blog</title>
+</head>
+<body>
+    <header class="center-align">
+    <nav class="blue">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">KachMan Blog</a>
+        </div>
+      </nav>
+    </header>
+    
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+        <br>
+
+        <div class="center">
+            <a href="/admin" class="center-align btn blue white-text waves-effect">Admin Login</a>
+        </div>
+    </div>
+</body>
+</html>

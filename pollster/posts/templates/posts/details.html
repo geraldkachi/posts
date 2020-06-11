@@ -1,0 +1,14 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+<h3 class="center-align blue white-text darken-1">{{post.title}}</h3>
+<div class="card-content">
+    {{post.body}}
+</div>
+<div class="card-action">
+    {{post.created_at}}
+</div>
+<br>
+<a href="/posts" class="btn blue waves-effect">Go Back</a>
+<br>
+{% endblock %}
